@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .marquee {
-  animation: scroll 10s linear infinite;
+  animation: scroll 8s linear infinite;
 }
 
 @keyframes scroll {

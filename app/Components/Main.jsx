@@ -17,12 +17,12 @@ const Main = () => {
     <div>
       <Navbar />
       <HeroSection />
-      <MarketingSection />
       <AboutSection />
       <VisionMission/>
-      <RecentProjects/>
-      <TestimonySection/>
       <OngoingProjects/>
+      <RecentProjects/>
+      <MarketingSection />
+      <TestimonySection/>
       <Footer/>
     </div>
   );

@@ -3,28 +3,36 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: "Lorem ipsum dolo",
+    title: "AI-Powered App",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sitLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sitLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sitLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sitLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor Lorem ipsum dolor sit",
+      "Developed a cutting-edge chatbot solution for a leading e-commerce platform, enhancing customer support and engagement using natural language processing.",
     img: "/33e587f7051a755a12924ff02714b828.jpg", // Replace with your actual image paths
     bgColor: "bg-purple-100",
   },
   {
     id: 2,
-    title: "Lorem ipsum dolo",
+    title: "Food Scanner App",
     description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
+      "Designed a food scanner app that utilizes AI to analyze nutritional content and provide personalized dietary recommendations.",
     img: "/cd07e129bd606a5f1b38eb0f49e88e10.jpg",
     bgColor: "bg-green-100",
   },
   {
     id: 3,
-    title: "Lorem ipsum dolo",
+    title: "Personalized Learning Platform",
     description:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum...",
+      "Created a personalized learning platform for an educational institution, leveraging AI to tailor content delivery and track student progress effectively.",
     img: "/df8ab2a7507f9f19331d52e50cf953e1.jpg",
     bgColor: "bg-pink-100",
   },
+  {
+    id: 4,
+    title: "swansorter Sorting web app",
+    description:
+      "Built an intelligent grain sorting web application that uses AI to classify and organize different types of grains with high accuracy and speed.",
+    img: "/swansorter.png",
+    bgColor: "bg-green-50",
+  }  
 ];
 
 const RecentProjects = () => {

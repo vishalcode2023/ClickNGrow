@@ -4,10 +4,30 @@ import { motion } from "framer-motion";
 
 export default function DigitalMarketingLayout() {
   const logos = [
-    { src: "/Logo/Logo.png", alt: "Groupe Lauzon" },
-    { src: "/Images/onyx_logo_-1.png", alt: "Arbour Volkswagen" },
-    { src: "/Images/onyx_logo2 (1).png", alt: "Mercedes-Benz" },
-    { src: "/Images/onyx_logo3 (1).png", alt: "Mazda" },
+    {
+      src: "https://res.cloudinary.com/dt2juqy9s/image/upload/v1745319822/Logo_img_rxgrwt.png",
+      alt: "Groupe Lauzon",
+    },
+    {
+      src: "https://imgs.search.brave.com/BpSBv8FBlsVA5Q0gc7J27-Q6xkZDzLpA6pdiGlFhHvY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dW5pdmVyc2l0eWth/cnQuY29tLy9Db250/ZW50L3VwbG9hZC9h/ZG1pbi91NGlhd3U0/MC4wcjAuanBn",
+      alt: "Arbour Volkswagen",
+    },
+    {
+      src: "/514564cc2b3f605c384a7ffbf61f63a11bd01ec4.png",
+      alt: "Mercedes-Benz",
+    },
+    {
+      src: "https://res.cloudinary.com/dt2juqy9s/image/upload/v1745319822/Logo_img_rxgrwt.png",
+      alt: "Groupe Lauzon",
+    },
+    {
+      src: "https://imgs.search.brave.com/BpSBv8FBlsVA5Q0gc7J27-Q6xkZDzLpA6pdiGlFhHvY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dW5pdmVyc2l0eWth/cnQuY29tLy9Db250/ZW50L3VwbG9hZC9h/ZG1pbi91NGlhd3U0/MC4wcjAuanBn",
+      alt: "Arbour Volkswagen",
+    },
+    {
+      src: "/514564cc2b3f605c384a7ffbf61f63a11bd01ec4.png",
+      alt: "Mercedes-Benz",
+    },
   ];
 
   return (
@@ -37,13 +57,13 @@ export default function DigitalMarketingLayout() {
           <div className="w-full md:w-2/3 overflow-hidden relative flex justify-center items-center">
             <div className="flex animate-scroll-x whitespace-nowrap">
               {[...logos, ...logos].map((logo, index) => (
-                <Image
+                <img
                   key={index}
                   src={logo.src}
                   alt={logo.alt}
                   width={120}
                   height={80}
-                  className="w-[100px] sm:w-[120px] h-[80px] mx-3 sm:mx-6 object-contain"
+                  className="w-[100px] sm:w-[120px] h-[80px] mx-3 sm:mx-6 object-contain rounded-full"
                 />
               ))}
             </div>
@@ -95,15 +115,16 @@ export default function DigitalMarketingLayout() {
               <span className="text-blue-400">Expertise</span>
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-gray-500 mb-4 md:mb-8 max-w-xl">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor Lorem ipsum dolor sit
+              Empower your business with ClickNGro a platform built to
+              simplify product launches, boost customer engagement, and
+              accelerate your growth with smart, data-driven strategies.
             </p>
           </div>
 
           {/* Service 3 */}
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm transform transition-transform hover:scale-105 h-80 flex flex-col justify-between">
             <div className="mb-4 md:mb-6">
-            <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <img
                   src="/photo-1596725858508-70543890c732.avif"
                   alt="SEO Icon"
@@ -120,7 +141,7 @@ export default function DigitalMarketingLayout() {
           {/* Service 4 */}
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm transform transition-transform hover:scale-105 h-80 flex flex-col justify-between">
             <div className="mb-4 md:mb-6">
-            <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <img
                   src="/photo-1519337265831-281ec6cc8514.avif"
                   alt="SEO Icon"
@@ -137,7 +158,7 @@ export default function DigitalMarketingLayout() {
           {/* Service 5 */}
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm transform transition-transform hover:scale-105 h-80 flex flex-col justify-between">
             <div className="mb-4 md:mb-6">
-            <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <img
                   src="/photo-1457305237443-44c3d5a30b89.avif"
                   alt="SEO Icon"
