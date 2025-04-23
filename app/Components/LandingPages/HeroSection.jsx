@@ -8,15 +8,13 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <video
+        src="/Landingpagegif.MP4"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         loop
         muted
         playsInline
-      >
-        <source src="/Landingpagegif.MP4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
@@ -31,7 +29,7 @@ const HeroSection = () => {
         {/* Text Content */}
         <div className="flex-1">
           <motion.h1
-            className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight space-y-2"
+            className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight"
             initial="hidden"
             animate="visible"
             variants={{
@@ -43,24 +41,35 @@ const HeroSection = () => {
               }
             }}
           >
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                Grow Your
-              </span>
-            </motion.div>
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
-              Business{' '}
-              <span className="relative inline-block">
-                With
-                <span className="absolute -bottom-1 left-0 w-full h-1 bg-cyan-500 rounded-md animate-pulse" />
-              </span>
-            </motion.div>
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-teal-400">
-                Us Now
-              </span>{' '}
-              <span className="text-cyan-500">?</span>
-            </motion.div>
+            {['Grow Your', 'Business With', 'Us Now ?'].map((line, index) => (
+              <motion.div
+                key={index}
+                variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+              >
+                <span
+                  className={
+                    index === 0
+                      ? 'text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'
+                      : index === 1
+                      ? 'relative inline-block'
+                      : 'text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-teal-400'
+                  }
+                >
+                  {index === 1 ? (
+                    <>
+                      Business{' '}
+                      <span className="relative inline-block">
+                        With
+                        <span className="absolute -bottom-1 left-0 w-full h-1 bg-cyan-500 rounded-md animate-pulse" />
+                      </span>
+                    </>
+                  ) : (
+                    line
+                  )}
+                </span>
+                {index === 2 && <span className="text-cyan-500">?</span>}
+              </motion.div>
+            ))}
           </motion.h1>
 
           <motion.p
@@ -75,7 +84,7 @@ const HeroSection = () => {
           </motion.p>
 
           <motion.button
-            className="mt-8 bg-cyan-400 text-white px-7 py-3 rounded-full font-semibold text-sm sm:text-base shadow-md hover:bg-cyan-500 transition-all duration-300 hover:scale-105"
+            className="mt-8 bg-cyan-400 text-white px-7 py-3 rounded-full font-semibold text-sm sm:text-base shadow-md hover:bg-cyan-500 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -86,11 +95,12 @@ const HeroSection = () => {
         {/* Image Content */}
         <div className="flex-1 flex items-center justify-center">
           <Image
-            src="/0e012dc7c5afd059507e719a12af3cfb1eeaaf6c.png" // Replace this with your actual image path
+            src="/0e012dc7c5afd059507e719a12af3cfb1eeaaf6c.png"
             alt="Illustration"
             width={500}
             height={500}
             className="w-full max-w-sm md:max-w-md"
+            priority
           />
         </div>
       </motion.div>
