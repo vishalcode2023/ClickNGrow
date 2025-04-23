@@ -33,7 +33,7 @@ export const metadata = {
     images: ["/logo-og.png"],
   },
   icons: {
-    icon: "/Logo/Logo.png",
+    icon: "/Logo/logo.png",
     apple: "/apple-touch-icon.png",
   },
 };

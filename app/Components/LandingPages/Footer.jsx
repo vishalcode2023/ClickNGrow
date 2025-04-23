@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-4">
-            <img src="/Logo/Logo.png" alt="ClickNGro Logo" className="w-24 h-24" />
+            <img src="/Logo/logo.png" alt="ClickNGro Logo" className="w-24 h-24" />
             <h1 className="font-bold text-blue-600 text-lg">CLICKNGRO</h1>
           </div>
           <p className="text-sm mb-2">
@@ -32,7 +32,6 @@ const Footer = () => {
         <div className="flex-1">
           <h3 className="font-semibold mb-3">Contact us</h3>
           <p className="text-sm mb-2"><strong>Technical Head:</strong> Shailesh P</p>
-          <p className="text-sm mb-2"><strong>Phone:</strong> [Shailesh Sir's Number]</p>
           <p className="text-sm mb-2"><strong>Marketing Strategy:</strong> Premkumar – 9035477777</p>
           <p className="text-sm mb-4"><strong>Email:</strong> info@clickngro.com</p>
           <div className="flex gap-3">
