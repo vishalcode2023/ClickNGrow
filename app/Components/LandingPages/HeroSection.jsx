@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <video
-        src="/Landingpagegif.MP4"
+        src="/Landingpagegif.mp4"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         loop
