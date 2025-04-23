@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-4">
-            <img src="/Logo/logo.png" alt="ClickNGro Logo" className="w-24 h-24" />
+            <img src="/Logo/Logo.png" alt="ClickNGro Logo" className="w-24 h-24" />
             <h1 className="font-bold text-blue-600 text-lg">CLICKNGRO</h1>
           </div>
           <p className="text-sm mb-2">
